@@ -12,13 +12,12 @@ services:
       # https://docs.gitlab.com/omnibus/settings/ssl/index.html#enable-the-lets-encrypt-integration
       # https://docs.gitlab.com/ee/administration/environment_variables.html
       GITLAB_OMNIBUS_CONFIG: |
-        external_url 'http://gitlab.example.com:8929'
+        external_url 'http://gitlab.example.com'
         gitlab_rails['gitlab_shell_ssh_port'] = 2224
         gitlab_rails['lfs_enabled'] = true
-        gitlab_rails['initial_root_password'] = 1988771017
     ports:
       # https://docs.gitlab.com/ee/administration/package_information/defaults.html#ports
-      - '8929:8929'
+      - '80:80'
       - '2224:22'
     volumes:
       - gitlab_config:/etc/gitlab
