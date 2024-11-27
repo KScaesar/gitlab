@@ -77,11 +77,17 @@ Choose either method1 or method2 for authentication.
       Port <port-number>
     ```
 
-## Create a project deploy key
+## deploy key for automation bot
 
 ```
 ssh-keygen -f ~/.ssh/golang_ssh -C "used to golang get private package"
 ```
+
+for `common` repository:  
+using public ssh key  
+
+for `go service` repository using `common`:  
+using private ssh key  
 
 <https://docs.gitlab.com/ee/user/project/deploy_keys/index.html#create-a-project-deploy-key>
 
