@@ -24,7 +24,7 @@ job:
     - |
       if [[ "$UT_TAGS" == "intg" ]]; then
         curl -fsSL https://get.docker.com -o get-docker.sh
-        sh get-docker.sh /dev/null
+        sh get-docker.sh
       fi
 
     - go mod tidy -v -x
@@ -33,6 +33,8 @@ job:
 image 裡應該也要有 docker，因為是 call docker cli，接 service 的 docker engine
 
 <https://docs.gitlab.com/ee/ci/docker/using_docker_build.html#use-docker-in-docker>
+
+<https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script>
 
 ## Docker daemon in rootless mode
 
@@ -44,5 +46,3 @@ Visit https://docs.docker.com/go/rootless/ to learn about rootless mode.
 To run the Docker daemon as a fully privileged service, but granting non-root  
 users access, refer to https://docs.docker.com/go/daemon-access/  
 
-
-<https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script>
