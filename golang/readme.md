@@ -77,6 +77,16 @@ Choose either method1 or method2 for authentication.
       Port <port-number>
     ```
 
+## Create a project deploy key
+
+```
+ssh-keygen -f ~/.ssh/golang_ssh -C "used to golang get private package"
+```
+
+<https://docs.gitlab.com/ee/user/project/deploy_keys/index.html#create-a-project-deploy-key>
+
+<https://gitlab.com/x246libra/IsCoolLab2024/-/blob/main/pipelines/vars.yml?ref_type=heads#L136-149>
+
 ## fix subgroup issue on gitlab
 
 ### Error output:
