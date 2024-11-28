@@ -59,6 +59,7 @@ Choose either method1 or method2 for authentication.
 
     $ ssh-add ~/.ssh/key_gitlab
     ```
+    <https://docs.gitlab.com/ee/user/ssh.html#add-an-ssh-key-to-your-gitlab-account>
 
 3. set `~/.ssh/config`
     ```
