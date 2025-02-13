@@ -167,6 +167,10 @@ go: module gitlab.example.com/project1/backend/util: git ls-remote -q origin in 
     module gitlab.example.com/project1/backend/util.git
     ```
 
+- method 4:  
+    Go 1.24 GOAUTH 私有庫認證  
+    https://tonybai.com/2024/12/17/go-1-24-foresight-part2/  
+
 open issue:  
 <https://gitlab.com/gitlab-org/gitlab/-/issues/36354>
 
